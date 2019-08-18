@@ -5,19 +5,19 @@
   
 
   
-  <title>我的第一篇文章 | Sunbearls`s Blog</title>
+  <title>如何使用hexo和github搭建自己的博客 | Sunbearls`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在深夜弄了这个个人博客，虽然一直很想自己写，但是总是有那么多的原因没有能自己写一个网页博客，现在先将这个暂时用着，后面再慢慢更改 感谢我的媳妇等我嘻嘻 开心">
+  <meta name="description" content="今天使用hexo搭建了自己第一个个人博客，过程很简单，简单地做一下记录 准备工作第一步首先安装一个Node.js，这个度娘上可以直接搜索，选择一个下载就行了，我个人是从这里下载的，下载时候傻瓜式安装就可以了然后安装一个Git，安装Git有两种方式一种是直接下载一个安装包然后安装就行了（链接)，第二种是使用npm来进行安装，我是使用的第一种，安装完成之后把Git加载环境变量中就可以使用了，如果没有配">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇文章">
+<meta property="og:title" content="如何使用hexo和github搭建自己的博客">
 <meta property="og:url" content="http://yoursite.com/2019/08/15/我的第一篇文章/index.html">
 <meta property="og:site_name" content="Sunbearls`s Blog">
-<meta property="og:description" content="在深夜弄了这个个人博客，虽然一直很想自己写，但是总是有那么多的原因没有能自己写一个网页博客，现在先将这个暂时用着，后面再慢慢更改 感谢我的媳妇等我嘻嘻 开心">
+<meta property="og:description" content="今天使用hexo搭建了自己第一个个人博客，过程很简单，简单地做一下记录 准备工作第一步首先安装一个Node.js，这个度娘上可以直接搜索，选择一个下载就行了，我个人是从这里下载的，下载时候傻瓜式安装就可以了然后安装一个Git，安装Git有两种方式一种是直接下载一个安装包然后安装就行了（链接)，第二种是使用npm来进行安装，我是使用的第一种，安装完成之后把Git加载环境变量中就可以使用了，如果没有配">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-14T16:33:57.520Z">
+<meta property="og:updated_time" content="2019-08-18T17:23:35.740Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇文章">
-<meta name="twitter:description" content="在深夜弄了这个个人博客，虽然一直很想自己写，但是总是有那么多的原因没有能自己写一个网页博客，现在先将这个暂时用着，后面再慢慢更改 感谢我的媳妇等我嘻嘻 开心">
+<meta name="twitter:title" content="如何使用hexo和github搭建自己的博客">
+<meta name="twitter:description" content="今天使用hexo搭建了自己第一个个人博客，过程很简单，简单地做一下记录 准备工作第一步首先安装一个Node.js，这个度娘上可以直接搜索，选择一个下载就行了，我个人是从这里下载的，下载时候傻瓜式安装就可以了然后安装一个Git，安装Git有两种方式一种是直接下载一个安装包然后安装就行了（链接)，第二种是使用npm来进行安装，我是使用的第一种，安装完成之后把Git加载环境变量中就可以使用了，如果没有配">
   
     <link rel="alternate" href="/atom.xml" title="Sunbearls`s Blog" type="application/atom+xml">
   
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇文章
+      如何使用hexo和github搭建自己的博客
     </h1>
   
 
@@ -86,13 +86,48 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在深夜弄了这个个人博客，虽然一直很想自己写，但是总是有那么多的原因没有能自己写一个网页博客，现在先将这个暂时用着，后面再慢慢更改</p>
-<p>感谢我的媳妇等我<br>嘻嘻</p>
-<h2 id="开心"><a href="#开心" class="headerlink" title="开心"></a>开心</h2>
+        <p>今天使用hexo搭建了自己第一个个人博客，过程很简单，简单地做一下记录</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>首先安装一个Node.js，这个度娘上可以直接搜索，选择一个下载就行了，我个人是从<a href="nodejs.org">这里</a>下载的，下载时候傻瓜式安装就可以了<br>然后安装一个Git，安装Git有两种方式一种是直接下载一个安装包然后安装就行了（<a href="https://git-scm.com/download" target="_blank" rel="noopener">链接</a>)，第二种是使用npm来进行安装，我是使用的第一种，安装完成之后把Git加载环境变量中就可以使用了，如果没有配置环境变量的话，可能会存在搭建失败的情况。</p>
+<p>git的第二种安装方式就是在终端中输入下面的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm intall hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>打开命令行，首先查看一下node.js是否安装成功,输入下面的两条命令，如果有版本信息就表示安装成功了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node -version</span><br><span class="line">$ npm -version</span><br></pre></td></tr></table></figure>
+
+<p>然后，配置一下镜像源，这是因为npm在国内下载速度不行，可以选用淘宝镜像，使用下面的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p>其中-g表示全局安装</p>
+<p>安装完成之后 我们就可以使用cnpm来安装我们的博客了</p>
+<h2 id="正式安装"><a href="#正式安装" class="headerlink" title="正式安装"></a>正式安装</h2><h3 id="第一步-1"><a href="#第一步-1" class="headerlink" title="第一步"></a>第一步</h3><p>输入以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>等待下载安装（这可能需要一点时间~）<br>安装完成之后，可以使用hexo -v 来验证一下</p>
+<h3 id="第二步-1"><a href="#第二步-1" class="headerlink" title="第二步"></a>第二步</h3><p>安装完成之后输入以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir &lt;foldername&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+
+<p>第一条命令的意思是在我们当前的文件目录下建立一个文件夹，这文件夹的名称可以随意，但是下面的folder的文件名要和这个一样<br>第二命令是进入我们这个文件<br>第三条命令是在folder这个文件下初始化我们的博客</p>
+<p>到了现在我们的博客就已经搭建完成了</p>
+<p>这个时候我们在终端下输入hexo server,就可以在本地看到我们的博客了<br>默认的地址是：<a href="https://localhost:4000/" target="_blank" rel="noopener">https://localhost:4000/</a></p>
+<p>这一步搭建完成之后我们就可以把我们的本地博客搭载在我们的github代码库下了</p>
+<h2 id="关联github"><a href="#关联github" class="headerlink" title="关联github"></a>关联github</h2><p>在我们的GitHub中新建一个仓库，在repostitory name这一栏输入 github的名字.gituhub.io;比如我的名字是sunbearls，我输入的就应该是sunbearls.github.io（这个地址就是博客的地址，创建完成之后可以在浏览器中输入此地址来访问）<br>然后点击下面的的create 完成创建<br>在我们创建的博客的文件下找到_config.yml 文件<br>将其中的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>:</span><br></pre></td></tr></table></figure>
+
+<p>改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo: github上新建代码仓库的地址</span><br></pre></td></tr></table></figure>
+
+<p>上面的repo就是你自己github上的地址，这个地址在你创建github 仓库完成之后就会自动生成，你只需要复制过来就行了</p>
+<p>完成了以上步骤之后我们在终端中输入以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>上面三条命令，分别是清除缓存、重新生成文件、部署网站</p>
+<p>完成之后就在在浏览器输入 <a href="https://github的名字.gituhub.io" target="_blank" rel="noopener">https://github的名字.gituhub.io</a>; 来访问我们的网站<br>这样基于Hexo搭建我们的个人博客就完成了~</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/15/我的第一篇文章/" data-id="cjze8cs1p0001oguhie95ijvi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/15/我的第一篇文章/" data-id="cjzh8ttto0000uguhdi5z1soz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -141,7 +176,7 @@
       <ul>
         
           <li>
-            <a href="/2019/08/15/我的第一篇文章/">我的第一篇文章</a>
+            <a href="/2019/08/15/我的第一篇文章/">如何使用hexo和github搭建自己的博客</a>
           </li>
         
           <li>
