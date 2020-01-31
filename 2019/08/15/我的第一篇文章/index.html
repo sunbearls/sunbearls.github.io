@@ -8,13 +8,14 @@
   <title>如何使用hexo和github搭建自己的博客 | Sunbearls`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="今天使用hexo搭建了自己第一个个人博客，过程很简单，简单地做一下记录 准备工作第一步首先安装一个Node.js，这个度娘上可以直接搜索，选择一个下载就行了，我个人是从这里下载的，下载时候傻瓜式安装就可以了然后安装一个Git，安装Git有两种方式一种是直接下载一个安装包然后安装就行了（链接)，第二种是使用npm来进行安装，我是使用的第一种，安装完成之后把Git加载环境变量中就可以使用了，如果没有配">
+<meta name="keywords" content="学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何使用hexo和github搭建自己的博客">
 <meta property="og:url" content="http://yoursite.com/2019/08/15/我的第一篇文章/index.html">
 <meta property="og:site_name" content="Sunbearls`s Blog">
 <meta property="og:description" content="今天使用hexo搭建了自己第一个个人博客，过程很简单，简单地做一下记录 准备工作第一步首先安装一个Node.js，这个度娘上可以直接搜索，选择一个下载就行了，我个人是从这里下载的，下载时候傻瓜式安装就可以了然后安装一个Git，安装Git有两种方式一种是直接下载一个安装包然后安装就行了（链接)，第二种是使用npm来进行安装，我是使用的第一种，安装完成之后把Git加载环境变量中就可以使用了，如果没有配">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-18T17:23:35.740Z">
+<meta property="og:updated_time" content="2020-01-31T13:12:18.777Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何使用hexo和github搭建自己的博客">
 <meta name="twitter:description" content="今天使用hexo搭建了自己第一个个人博客，过程很简单，简单地做一下记录 准备工作第一步首先安装一个Node.js，这个度娘上可以直接搜索，选择一个下载就行了，我个人是从这里下载的，下载时候傻瓜式安装就可以了然后安装一个Git，安装Git有两种方式一种是直接下载一个安装包然后安装就行了（链接)，第二种是使用npm来进行安装，我是使用的第一种，安装完成之后把Git加载环境变量中就可以使用了，如果没有配">
@@ -50,6 +51,8 @@
         
           <a class="main-nav-link" href="/archives">Archives</a>
         
+          <a class="main-nav-link" href="/about">about</a>
+        
       </nav>
       <nav id="sub-nav">
         
@@ -70,6 +73,10 @@
   <time datetime="2019-08-14T16:17:19.000Z" itemprop="datePublished">2019-08-15</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo博客使用学习/">hexo博客使用学习</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -86,6 +93,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+        
+          <div id="toc" class="toc-article">
+            <strong class="toc-title">文章目录</strong>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一步"><span class="toc-number">1.1.</span> <span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二步"><span class="toc-number">1.2.</span> <span class="toc-text">第二步</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正式安装"><span class="toc-number">2.</span> <span class="toc-text">正式安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一步-1"><span class="toc-number">2.1.</span> <span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二步-1"><span class="toc-number">2.2.</span> <span class="toc-text">第二步</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关联github"><span class="toc-number">3.</span> <span class="toc-text">关联github</span></a></li></ol>
+          </div>
+        
         <p>今天使用hexo搭建了自己第一个个人博客，过程很简单，简单地做一下记录</p>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>首先安装一个Node.js，这个度娘上可以直接搜索，选择一个下载就行了，我个人是从<a href="nodejs.org">这里</a>下载的，下载时候傻瓜式安装就可以了<br>然后安装一个Git，安装Git有两种方式一种是直接下载一个安装包然后安装就行了（<a href="https://git-scm.com/download" target="_blank" rel="noopener">链接</a>)，第二种是使用npm来进行安装，我是使用的第一种，安装完成之后把Git加载环境变量中就可以使用了，如果没有配置环境变量的话，可能会存在搭建失败的情况。</p>
 <p>git的第二种安装方式就是在终端中输入下面的命令</p>
@@ -127,9 +140,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/15/我的第一篇文章/" data-id="cjzh8ttto0000uguhdi5z1soz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/15/我的第一篇文章/" data-id="ck625hhj40002f4uhtm8f5pob" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
+
     </footer>
   </div>
   
@@ -152,12 +167,33 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo博客使用学习/">hexo博客使用学习</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/学习/" style="font-size: 10px;">学习</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -195,7 +231,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 Mr.luo<br>
+      &copy; 2020 Mr.luo<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -206,6 +242,8 @@
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">about</a>
   
 </nav>
     
