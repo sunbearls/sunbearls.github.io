@@ -7,18 +7,18 @@
   
   <title>javascript学习笔记 | Sunbearls`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###1.变量javascript有两种定义变量的方法：在为变量第一次赋值时定义和使用关键字var定义变量。这两种定义方法类似，但是使用var定义的变量在myeclipse中通过content assist功能显示当前可用的变量就是通过var来寻找这些变量；同时在使用var定义变量时可以在一行定义多个变量，中间使用“，”隔开。由于javascript是弱语言，因此在第一次为变量赋值时javascr">
+  <meta name="description" content="1.变量javascript有两种定义变量的方法：在为变量第一次赋值时定义和使用关键字var定义变量。这两种定义方法类似，但是使用var定义的变量在myeclipse中通过content assist功能显示当前可用的变量就是通过var来寻找这些变量；同时在使用var定义变量时可以在一行定义多个变量，中间使用“，”隔开。由于javascript是弱语言，因此在第一次为变量赋值时javascript">
 <meta name="keywords" content="学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="javascript学习笔记">
 <meta property="og:url" content="http://yoursite.com/2020/02/02/javascript学习/index.html">
 <meta property="og:site_name" content="Sunbearls`s Blog">
-<meta property="og:description" content="###1.变量javascript有两种定义变量的方法：在为变量第一次赋值时定义和使用关键字var定义变量。这两种定义方法类似，但是使用var定义的变量在myeclipse中通过content assist功能显示当前可用的变量就是通过var来寻找这些变量；同时在使用var定义变量时可以在一行定义多个变量，中间使用“，”隔开。由于javascript是弱语言，因此在第一次为变量赋值时javascr">
+<meta property="og:description" content="1.变量javascript有两种定义变量的方法：在为变量第一次赋值时定义和使用关键字var定义变量。这两种定义方法类似，但是使用var定义的变量在myeclipse中通过content assist功能显示当前可用的变量就是通过var来寻找这些变量；同时在使用var定义变量时可以在一行定义多个变量，中间使用“，”隔开。由于javascript是弱语言，因此在第一次为变量赋值时javascript">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-03T15:59:34.552Z">
+<meta property="og:updated_time" content="2020-02-03T16:03:33.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript学习笔记">
-<meta name="twitter:description" content="###1.变量javascript有两种定义变量的方法：在为变量第一次赋值时定义和使用关键字var定义变量。这两种定义方法类似，但是使用var定义的变量在myeclipse中通过content assist功能显示当前可用的变量就是通过var来寻找这些变量；同时在使用var定义变量时可以在一行定义多个变量，中间使用“，”隔开。由于javascript是弱语言，因此在第一次为变量赋值时javascr">
+<meta name="twitter:description" content="1.变量javascript有两种定义变量的方法：在为变量第一次赋值时定义和使用关键字var定义变量。这两种定义方法类似，但是使用var定义的变量在myeclipse中通过content assist功能显示当前可用的变量就是通过var来寻找这些变量；同时在使用var定义变量时可以在一行定义多个变量，中间使用“，”隔开。由于javascript是弱语言，因此在第一次为变量赋值时javascript">
   
     <link rel="alternate" href="/atom.xml" title="Sunbearls`s Blog" type="application/atom+xml">
   
@@ -94,12 +94,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         
-        <p>###1.变量<br>javascript有两种定义变量的方法：在为变量第一次赋值时定义和使用关键字var定义变量。这两种定义方法类似，但是使用var定义的变量在myeclipse中通过content assist功能显示当前可用的变量就是通过var来寻找这些变量；同时在使用var定义变量时可以在一行定义多个变量，中间使用“，”隔开。<br>由于javascript是弱语言，因此在第一次为变量赋值时javascript解析器会为变量创建一个相应类型的值；变量的当前类型就是最后一次为这个变量赋的值的类型。例如：</p>
+        <h3 id="1-变量"><a href="#1-变量" class="headerlink" title="1.变量"></a>1.变量</h3><p>javascript有两种定义变量的方法：在为变量第一次赋值时定义和使用关键字var定义变量。这两种定义方法类似，但是使用var定义的变量在myeclipse中通过content assist功能显示当前可用的变量就是通过var来寻找这些变量；同时在使用var定义变量时可以在一行定义多个变量，中间使用“，”隔开。<br>由于javascript是弱语言，因此在第一次为变量赋值时javascript解析器会为变量创建一个相应类型的值；变量的当前类型就是最后一次为这个变量赋的值的类型。例如：</p>
 <a id="more"></a>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var p = <span class="string">"abc"</span>;   //当前类型为string </span><br><span class="line">p = <span class="string">"123"</span>;     //此时类型为<span class="built_in">integer</span></span><br></pre></td></tr></table></figure>
 
 <p>javascript变量名须遵循的规则：<br>·第一个字符必须为字母、下划线(_)、和$<br>·其他字符可以是下划线、美元符号、任何字母或数字字符</p>
-<p>###2.原始类型<br>javascript有5种原始类型，他们分别是：Undefined、Null、Boolean、Number、String。在javascript中提供typeof运算符获得一个变量的类型，可以用typeof来判断一个变量是否属于原始类型，以及属于哪一个原始类型。eg：</p>
+<h3 id="2-原始类型"><a href="#2-原始类型" class="headerlink" title="2.原始类型"></a>2.原始类型</h3><p>javascript有5种原始类型，他们分别是：Undefined、Null、Boolean、Number、String。在javascript中提供typeof运算符获得一个变量的类型，可以用typeof来判断一个变量是否属于原始类型，以及属于哪一个原始类型。eg：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var p1 = 20;    //定义整形变量</span><br><span class="line">var p2 = <span class="string">"abc"</span>;   //定义字符串类型变量</span><br><span class="line">alert(typeof p1); //输出number</span><br><span class="line">alert(typeof p2);  //输出string</span><br></pre></td></tr></table></figure>
 
 <p>1)undefined类型<br>undefined类型只有一个值，就是undefined，如果要判断未使用var定义的变量是否是未定义的，需要使用字符串“undefined”来判断，示例如下：</p>
@@ -191,8 +191,8 @@
 <td align="center">十六进制数表示的Unicode字符</td>
 </tr>
 </tbody></table>
-<p>###3.类型转换<br>tostring():将其他类型的值转换为string类型<br>parseInt():将字符串类型转换为整型值，此函数有一个基模式可已将二进制、八进制、十六进制或其他进制转换成整数，其函数模型为：parseInt(“1和0组成的字符串”，想要显示的进制)<br>parseFloat():将字符串类型转换为浮点值，只能以十进制进行转换。<br>强制类型转换：<br>·Boolean(value):把value中的值转换成Boolean类型<br>·Number(value):把value中的值转换成数字。此方式的强制类型转换与parseInt()和parseFloat()的处理方式类似，但是此方法转换的是整个值，而不是部分值（如12ab,number()返回NaN,parseInt()返回12<br>·String(value):把value中的值转换成字符串，此方法与tostring()不同的唯一之处是此方法可以将“null”和”undefined”转换成相应的字符串而不发生错误。</p>
-<p>###4.函数与函数调用<br>javascript中的函数需要使用关键字function来声明，函数的基本语法如下：</p>
+<h3 id="3-类型转换"><a href="#3-类型转换" class="headerlink" title="3.类型转换"></a>3.类型转换</h3><p>tostring():将其他类型的值转换为string类型<br>parseInt():将字符串类型转换为整型值，此函数有一个基模式可已将二进制、八进制、十六进制或其他进制转换成整数，其函数模型为：parseInt(“1和0组成的字符串”，想要显示的进制)<br>parseFloat():将字符串类型转换为浮点值，只能以十进制进行转换。<br>强制类型转换：<br>·Boolean(value):把value中的值转换成Boolean类型<br>·Number(value):把value中的值转换成数字。此方式的强制类型转换与parseInt()和parseFloat()的处理方式类似，但是此方法转换的是整个值，而不是部分值（如12ab,number()返回NaN,parseInt()返回12<br>·String(value):把value中的值转换成字符串，此方法与tostring()不同的唯一之处是此方法可以将“null”和”undefined”转换成相应的字符串而不发生错误。</p>
+<h3 id="4-函数与函数调用"><a href="#4-函数与函数调用" class="headerlink" title="4.函数与函数调用"></a>4.函数与函数调用</h3><p>javascript中的函数需要使用关键字function来声明，函数的基本语法如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> funName(arg0,arg1,arg2....)&#123;</span><br><span class="line">    statements</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>javascript中的函数没有返回类型，但是可以用return来返回值。并且javascript中的函数不能重载，要是出现函数名相同的函数，后面一个函数会覆盖前面一个的。<br>在javascript中可以使用arguments对象实现动态参数，在函数声明中没有定义参数，在函数体内仍然可以使用arguments对象来获得当前函数的参数值，如下示例：</p>
@@ -202,7 +202,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var funName = new Function(arg1,arg2,arg3....,functionBody);</span><br></pre></td></tr></table></figure>
 
 <p>这样的函数和平常函数一样调用就行了</p>
-<p>###5.类和对象<br>在javascript中有很多预定义的类，像Array,Object,String,Number等，使用new关键字就能创建相应的对象。eg:</p>
+<h3 id="5-类和对象"><a href="#5-类和对象" class="headerlink" title="5.类和对象"></a>5.类和对象</h3><p>在javascript中有很多预定义的类，像Array,Object,String,Number等，使用new关键字就能创建相应的对象。eg:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var array1 = new Array();   //这样就创建了一个数组对象</span><br></pre></td></tr></table></figure>
 
 <p>3种方法来自定义类：<br>1)工厂方式（动态添加类成员），如下示例：</p>
@@ -218,7 +218,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">function</span> <span class="function"><span class="title">Student</span></span>() &#123;   </span><br><span class="line">    &#125;</span><br><span class="line">    Student.prototype.id = <span class="string">'11'</span>;</span><br><span class="line">    Student.prototype.xm = <span class="string">'王五'</span>;</span><br><span class="line">    Student.prototype.age = 12;</span><br><span class="line">    Student.prototype.study = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        alert(this.xm + <span class="string">'开始学习'</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">var oStudent1 = new Student();</span><br><span class="line">oStudent1.study();</span><br></pre></td></tr></table></figure>
 
 <p>使用原型方式的另一个好处是可以为已经存在的类添加新的成员。</p>
-<p>###5.其他客户端技术<br>1)DOM<br>DOM主要的功能是获得HTML语言中的的各个元素（如div,form等)，从而可以很容易地获得这些元素的信息，或动态向这些元素中添加新的元素。在javascript中描述DOM的对象是document,我们可以使用以下代码来直接操作HTML文档</p>
+<h3 id="6-其他客户端技术"><a href="#6-其他客户端技术" class="headerlink" title="6.其他客户端技术"></a>6.其他客户端技术</h3><p>1)DOM<br>DOM主要的功能是获得HTML语言中的的各个元素（如div,form等)，从而可以很容易地获得这些元素的信息，或动态向这些元素中添加新的元素。在javascript中描述DOM的对象是document,我们可以使用以下代码来直接操作HTML文档</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var oHtml = document.documentElement;</span><br><span class="line">var oHead = oHtml.firstChild;   //获得head对象</span><br><span class="line">var oHead = oHtml.childNodes[0];</span><br><span class="line">var oBody = oHtml.lastChild;   //获得body对象</span><br><span class="line">var oBody = oHtml.chidlNodes[1];</span><br><span class="line">alert(oHead.outerHTML);    //显示包括head标签本身的内容</span><br><span class="line">alert(oBody.innerHTML);   //显示不包括body标签本身的内容</span><br></pre></td></tr></table></figure>
 
 <p>2)获得HTML元素的3中方法<br>DOM中有3中可以获得当前HTML文档中的任意一个HTML元素，这3种方法分别是：getElementById、getElementByName、getElementByTagName;<br>getElementById方法：此方法可以根据HTML元素的id属性值得到HTML元素，在HTML中每个元素的id都是唯一的，使用方法如下：</p>
@@ -244,7 +244,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/02/javascript学习/" data-id="ck66n0s6a000h7wuhzc8od9j2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/02/javascript学习/" data-id="ck66n8xld000hvcuh8wno7p4x" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
