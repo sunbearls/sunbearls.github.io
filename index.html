@@ -67,6 +67,193 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-navicat连接mysql问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/06/navicat连接mysql问题/" class="article-date">
+  <time datetime="2020-02-06T07:46:25.000Z" itemprop="datePublished">2020-02-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/工具使用/">工具使用</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/06/navicat连接mysql问题/">navicat连接mysql问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-问题原因"><a href="#1-问题原因" class="headerlink" title="1.问题原因"></a>1.问题原因</h3><p>在使用navicat premium 12时出现不能连接mysql 8.0版本的情况，这是由于mysql版本升级之后的加密规则不一样导致，在mysql8.0版本之前的加密规则是mysql_natice_password,mysql8.0之后，加密规则是caching_sha2_password.</p>
+<h3 id="2-解决方案"><a href="#2-解决方案" class="headerlink" title="2.解决方案"></a>2.解决方案</h3><p>首先进入mysql的command line client,需要输入密码，默认用户名是root，如果更改过的需要如下图所示：</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/02/06/navicat连接mysql问题/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/06/navicat连接mysql问题/" data-id="ck6ah6p4j0009c0uhpe21vpt0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/navicat/">navicat</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-servlet学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/06/servlet学习笔记/" class="article-date">
+  <time datetime="2020-02-06T06:33:53.000Z" itemprop="datePublished">2020-02-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/学习/">学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/06/servlet学习笔记/">servlet学习笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <h3 id="1-配置tomcat数据连接池"><a href="#1-配置tomcat数据连接池" class="headerlink" title="1.配置tomcat数据连接池"></a>1.配置tomcat数据连接池</h3><p>由于HTTP协议的web程序是无状态的，当客户端请求频繁就会消耗很多资源，因此需要配置一种数据库持续连接技术（数据库连接池技术）。数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接池，以备其他程序使用。使用tomcat配置数据库连接池有以下两种方式：<br>·配置全局数据库连接池<br>·配置局部数据库连接池</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/06/servlet学习笔记/" data-id="ck6ah6p4p000ec0uh19quqsbt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/servlet/">servlet</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-AJAX学习笔笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/04/AJAX学习笔笔记/" class="article-date">
+  <time datetime="2020-02-04T08:35:59.000Z" itemprop="datePublished">2020-02-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/学习/">学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/04/AJAX学习笔笔记/">AJAX学习笔笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>通过AJAX技术，可以实现无刷新的方式更新HTML元素中的内容。AJAX技术是由4种技术组成的结合体，分别是javascript、CSS、DOM、XMLHttpRequest.前3种技术是客户端技术，XMLHttpRequest组件和服务端的关系密不可分，使用这个组件可以从服务器端获得数据做出更好的系统。<br>XMLHttpRequest的原理：它是发送一个HTTP请求的客户端组件，开发人员可以根据不同的情况选择以同步或者异步的方式来发送HTTP请求，并获得服务器端的相应消息，然后使用DOM技术找到要更新的的某些HTML元素，并用这些数据进行更新。<br>在客户端使用XMLHttpRequest组件使用以下代码创建一个XMLHttpRequest对象</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/02/04/AJAX学习笔笔记/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/04/AJAX学习笔笔记/" data-id="ck6ah6p430000c0uh8oyolq5a" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AJAX/">AJAX</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-css学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/04/css学习笔记/" class="article-date">
+  <time datetime="2020-02-04T06:27:32.000Z" itemprop="datePublished">2020-02-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/学习/">学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/04/css学习笔记/">css学习笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>CSS基本语法格式:分为两个部分（选择器和样式规则）。选择器用来指定HTML元素，{}中的内容为样式规则，用于设置样式内容。其格式如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">H3&#123;</span><br><span class="line">    font-family:Arial,sans-serif;</span><br><span class="line">    text-align:center;</span><br><span class="line">    color:red</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2020/02/04/css学习笔记/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/04/css学习笔记/" data-id="ck6ah6p4a0002c0uhvchw8k5t" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-javascript学习" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/02/02/javascript学习/" class="article-date">
@@ -74,7 +261,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/javascript/">javascript</a>
+    <a class="article-category-link" href="/categories/学习/">学习</a>
   </div>
 
   </div>
@@ -102,10 +289,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/02/javascript学习/" data-id="ck66n8xld000hvcuh8wno7p4x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/02/javascript学习/" data-id="ck6ah6p5g000zc0uhjg2xqj7z" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 
     </footer>
   </div>
@@ -121,7 +308,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/html/">html</a>
+    <a class="article-category-link" href="/categories/学习/">学习</a>
   </div>
 
   </div>
@@ -132,7 +319,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/31/HTML/">HTML基本构成</a>
+      <a class="article-title" href="/2020/01/31/HTML/">HTML学习笔记</a>
     </h1>
   
 
@@ -155,10 +342,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/31/HTML/" data-id="ck66n8xjg0000vcuh3dx36b46" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/31/HTML/" data-id="ck6ah6p4f0006c0uhblwqp3rg" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li></ul>
 
     </footer>
   </div>
@@ -174,7 +361,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/hexo博客使用学习/">hexo博客使用学习</a>
+    <a class="article-category-link" href="/categories/学习/">学习</a>
   </div>
 
   </div>
@@ -205,10 +392,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/15/我的第一篇文章/" data-id="ck66n8xju0005vcuhn7240rob" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/15/我的第一篇文章/" data-id="ck6ah6p4n000dc0uhzento2ef" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo使用/">hexo使用</a></li></ul>
 
     </footer>
   </div>
@@ -223,6 +410,10 @@
   <time datetime="2019-08-14T15:55:30.426Z" itemprop="datePublished">2019-08-14</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/学习/">学习</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -251,10 +442,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/14/hello-world/" data-id="ck66n8xjo0002vcuh8rj0ok0v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/14/hello-world/" data-id="ck6ah6p4i0008c0uhkmqlt3ro" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo使用/">hexo使用</a></li></ul>
 
     </footer>
   </div>
@@ -273,7 +464,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo博客使用学习/">hexo博客使用学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/html/">html</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具使用/">工具使用</a></li></ul>
     </div>
   </div>
 
@@ -283,7 +474,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AJAX/">AJAX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo使用/">hexo使用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/navicat/">navicat</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/servlet/">servlet</a></li></ul>
     </div>
   </div>
 
@@ -293,7 +484,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/学习/" style="font-size: 10px;">学习</a>
+      <a href="/tags/AJAX/" style="font-size: 10px;">AJAX</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/hexo使用/" style="font-size: 20px;">hexo使用</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/navicat/" style="font-size: 10px;">navicat</a> <a href="/tags/servlet/" style="font-size: 10px;">servlet</a>
     </div>
   </div>
 
@@ -315,19 +506,23 @@
       <ul>
         
           <li>
+            <a href="/2020/02/06/navicat连接mysql问题/">navicat连接mysql问题</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/06/servlet学习笔记/">servlet学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/04/AJAX学习笔笔记/">AJAX学习笔笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/04/css学习笔记/">css学习笔记</a>
+          </li>
+        
+          <li>
             <a href="/2020/02/02/javascript学习/">javascript学习笔记</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/31/HTML/">HTML基本构成</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/15/我的第一篇文章/">如何使用hexo和github搭建自己的博客</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/14/hello-world/">Hello World</a>
           </li>
         
       </ul>

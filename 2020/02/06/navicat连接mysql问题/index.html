@@ -5,18 +5,22 @@
   
 
   
-  <title>Archives: 2020/1 | Sunbearls`s Blog</title>
+  <title>navicat连接mysql问题 | Sunbearls`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生活不错">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sunbearls`s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/01/index.html">
+  <meta name="description" content="1.问题原因在使用navicat premium 12时出现不能连接mysql 8.0版本的情况，这是由于mysql版本升级之后的加密规则不一样导致，在mysql8.0版本之前的加密规则是mysql_natice_password,mysql8.0之后，加密规则是caching_sha2_password. 2.解决方案首先进入mysql的command line client,需要输入密码，默认">
+<meta name="keywords" content="navicat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="navicat连接mysql问题">
+<meta property="og:url" content="http://yoursite.com/2020/02/06/navicat连接mysql问题/index.html">
 <meta property="og:site_name" content="Sunbearls`s Blog">
-<meta property="og:description" content="生活不错">
+<meta property="og:description" content="1.问题原因在使用navicat premium 12时出现不能连接mysql 8.0版本的情况，这是由于mysql版本升级之后的加密规则不一样导致，在mysql8.0版本之前的加密规则是mysql_natice_password,mysql8.0之后，加密规则是caching_sha2_password. 2.解决方案首先进入mysql的command line client,需要输入密码，默认">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2020/02/06/navicat连接mysql问题/1.jpg">
+<meta property="og:updated_time" content="2020-02-06T08:15:50.942Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sunbearls`s Blog">
-<meta name="twitter:description" content="生活不错">
+<meta name="twitter:title" content="navicat连接mysql问题">
+<meta name="twitter:description" content="1.问题原因在使用navicat premium 12时出现不能连接mysql 8.0版本的情况，这是由于mysql版本升级之后的加密规则不一样导致，在mysql8.0版本之前的加密规则是mysql_natice_password,mysql8.0之后，加密规则是caching_sha2_password. 2.解决方案首先进入mysql的command line client,需要输入密码，默认">
+<meta name="twitter:image" content="http://yoursite.com/2020/02/06/navicat连接mysql问题/1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Sunbearls`s Blog" type="application/atom+xml">
   
@@ -65,40 +69,66 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/01/31/HTML/" class="archive-article-date">
-  <time datetime="2020-01-31T13:19:20.000Z" itemprop="datePublished">Jan 31</time>
+        <section id="main"><article id="post-navicat连接mysql问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/06/navicat连接mysql问题/" class="article-date">
+  <time datetime="2020-02-06T07:46:25.000Z" itemprop="datePublished">2020-02-06</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/工具使用/">工具使用</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/31/HTML/">HTML学习笔记</a>
+    <h1 class="article-title" itemprop="name">
+      navicat连接mysql问题
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <h3 id="1-问题原因"><a href="#1-问题原因" class="headerlink" title="1.问题原因"></a>1.问题原因</h3><p>在使用navicat premium 12时出现不能连接mysql 8.0版本的情况，这是由于mysql版本升级之后的加密规则不一样导致，在mysql8.0版本之前的加密规则是mysql_natice_password,mysql8.0之后，加密规则是caching_sha2_password.</p>
+<h3 id="2-解决方案"><a href="#2-解决方案" class="headerlink" title="2.解决方案"></a>2.解决方案</h3><p>首先进入mysql的command line client,需要输入密码，默认用户名是root，如果更改过的需要如下图所示：</p>
+<a id="more"></a>
+<p><img src="1.jpg" alt="alt"><br>进入之后逐行输入以下代码即可：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; use mysql;</span><br><span class="line">mysql&gt; select user,plugin from user <span class="built_in">where</span> user =<span class="string">'root'</span>;  //此行语句是查询默认加密规则，当你执行下面的语句之后在执行此语句会发现加密规则已经改变</span><br><span class="line">mysql&gt; ALTER USER<span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'password'</span> PASSWORD EXPIRE NEVER;   //此处语句是更改加密方式</span><br><span class="line">mysql&gt; ALTER USER<span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED WITH mysql_native_password BY <span class="string">'password'</span>;   //此处语句是更改用户密码，其中的password是自己真实使用的密码</span><br></pre></td></tr></table></figure>
 
+<p>完成以上语句之后即可连接mysql。</p>
+<p>以上内容仅供学习，如若侵权，联系即删！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/06/navicat连接mysql问题/" data-id="ck6ah6p4j0009c0uhpe21vpt0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/navicat/">navicat</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/06/servlet学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">servlet学习笔记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         

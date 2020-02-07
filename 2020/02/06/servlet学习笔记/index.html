@@ -5,18 +5,20 @@
   
 
   
-  <title>Archives: 2020/1 | Sunbearls`s Blog</title>
+  <title>servlet学习笔记 | Sunbearls`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生活不错">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sunbearls`s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/01/index.html">
+  <meta name="description" content="1.配置tomcat数据连接池由于HTTP协议的web程序是无状态的，当客户端请求频繁就会消耗很多资源，因此需要配置一种数据库持续连接技术（数据库连接池技术）。数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接池，以备其他程序使用。使用tomcat配置数据库连接池有以下两种方式：·配置全局数据库连接池·配置局部数据库连接池">
+<meta name="keywords" content="servlet">
+<meta property="og:type" content="article">
+<meta property="og:title" content="servlet学习笔记">
+<meta property="og:url" content="http://yoursite.com/2020/02/06/servlet学习笔记/index.html">
 <meta property="og:site_name" content="Sunbearls`s Blog">
-<meta property="og:description" content="生活不错">
+<meta property="og:description" content="1.配置tomcat数据连接池由于HTTP协议的web程序是无状态的，当客户端请求频繁就会消耗很多资源，因此需要配置一种数据库持续连接技术（数据库连接池技术）。数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接池，以备其他程序使用。使用tomcat配置数据库连接池有以下两种方式：·配置全局数据库连接池·配置局部数据库连接池">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-02-06T08:13:28.559Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sunbearls`s Blog">
-<meta name="twitter:description" content="生活不错">
+<meta name="twitter:title" content="servlet学习笔记">
+<meta name="twitter:description" content="1.配置tomcat数据连接池由于HTTP协议的web程序是无状态的，当客户端请求频繁就会消耗很多资源，因此需要配置一种数据库持续连接技术（数据库连接池技术）。数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接池，以备其他程序使用。使用tomcat配置数据库连接池有以下两种方式：·配置全局数据库连接池·配置局部数据库连接池">
   
     <link rel="alternate" href="/atom.xml" title="Sunbearls`s Blog" type="application/atom+xml">
   
@@ -65,40 +67,68 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/01/31/HTML/" class="archive-article-date">
-  <time datetime="2020-01-31T13:19:20.000Z" itemprop="datePublished">Jan 31</time>
+        <section id="main"><article id="post-servlet学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/06/servlet学习笔记/" class="article-date">
+  <time datetime="2020-02-06T06:33:53.000Z" itemprop="datePublished">2020-02-06</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/学习/">学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/31/HTML/">HTML学习笔记</a>
+    <h1 class="article-title" itemprop="name">
+      servlet学习笔记
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <h3 id="1-配置tomcat数据连接池"><a href="#1-配置tomcat数据连接池" class="headerlink" title="1.配置tomcat数据连接池"></a>1.配置tomcat数据连接池</h3><p>由于HTTP协议的web程序是无状态的，当客户端请求频繁就会消耗很多资源，因此需要配置一种数据库持续连接技术（数据库连接池技术）。数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接池，以备其他程序使用。使用tomcat配置数据库连接池有以下两种方式：<br>·配置全局数据库连接池<br>·配置局部数据库连接池</p>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/06/servlet学习笔记/" data-id="ck6ah6p4p000ec0uh19quqsbt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/servlet/">servlet</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/02/06/navicat连接mysql问题/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          navicat连接mysql问题
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/02/04/AJAX学习笔笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">AJAX学习笔笔记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         
