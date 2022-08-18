@@ -5,19 +5,16 @@
   
 
   
-  <title>web开发乱码问题 | Sunbearls`s Blog</title>
+  <title>Tag: linux学习 | Sunbearls`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.web开发的乱码问题在web开发中会出现很多的乱码问题，出现这些问题的唯一原因就是我们使用了不同不支持中文或者是错误的编码格式来对中文进行编码。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="web开发乱码问题">
-<meta property="og:url" content="http://yoursite.com/2020/02/11/web%E5%BC%80%E5%8F%91%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/index.html">
+  <meta name="description" content="生活不错">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sunbearls&#96;s Blog">
+<meta property="og:url" content="http://yoursite.com/tags/linux%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Sunbearls&#96;s Blog">
-<meta property="og:description" content="1.web开发的乱码问题在web开发中会出现很多的乱码问题，出现这些问题的唯一原因就是我们使用了不同不支持中文或者是错误的编码格式来对中文进行编码。">
+<meta property="og:description" content="生活不错">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-02-11T07:38:26.000Z">
-<meta property="article:modified_time" content="2020-02-11T09:27:00.977Z">
 <meta property="article:author" content="Mr.luo">
-<meta property="article:tag" content="web乱码">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Sunbearls`s Blog" type="application/atom+xml">
@@ -69,75 +66,40 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-web开发乱码问题" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/11/web%E5%BC%80%E5%8F%91%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" class="article-date">
-  <time datetime="2020-02-11T07:38:26.000Z" itemprop="datePublished">2020-02-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">问题解决</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      web开发乱码问题
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2022" class="archive-year">2022</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2022/08/19/llinux%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
+  <time datetime="2022-08-18T16:18:41.000Z" itemprop="datePublished">Aug 19</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2022/08/19/llinux%E5%AD%A6%E4%B9%A0/">llinux学习</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-        <h2 id="1-web开发的乱码问题"><a href="#1-web开发的乱码问题" class="headerlink" title="1.web开发的乱码问题"></a>1.web开发的乱码问题</h2><p>在web开发中会出现很多的乱码问题，出现这些问题的唯一原因就是我们使用了不同不支持中文或者是错误的编码格式来对中文进行编码。</p>
-<span id="more"></span>
-
-<h3 id="1-java编码原理"><a href="#1-java编码原理" class="headerlink" title="1.java编码原理"></a>1.java编码原理</h3><p>在java内部使用的是UCS2编码（2个字节的Unicode编码），这是一种编码格式的世界语，所有可以在计算机中使用的自然语言都有对应的ucs2编码。在编写java程序时，一般都是使用系统默认的编码，对于中文系统来说，默认的编码就是GB18030.<br>无论我们使用哪种编码格式，java在编译时都会将其转化为UCS2编码。<br>中文的所使用编码格式一般是UTF-8，这是因为UCS2编码中所有的字符都是由两个字节组成，如果在程序中没有多少中文字符，在转换到UCS2编码后，.class文件的大小会成倍的增长。使用UTF-8能够避免这样的问题。<br>1.utf-8和UCS2编码的区别<br>UTF-8编码和UCS2编码转换只需要一个很简单的公式，对于英文字符，UTF-8只用一个字节来表示，对于中文字符，UTF-8使用3个字节来表示<br>2.当客户端输出中文时，出现乱码或者“？”,这是由于服务器端和客户机端输出响应信息的编码方式不一致导致的。通常由一下两种解决方法<br>·使用setContentType方法：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.setContentType(<span class="string">&quot;text/html;charset=utf-8&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>通过setContentType方法不仅设置了服务端转换字符所使用的编码方式，而且设置了客户端显示字符串的编码方式。<br>但是有的web服务器不支持setContentType或setCharacterEncoding方法设置服务端转换字符时的编码格式。这样使用此方式就失效了，所以使用以下的方式：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.setHeader(<span class="string">&quot;Content-Type&quot;</span>,<span class="string">&quot;text/html;charset=utf-8&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>这种方式是直接通过java本身的编码转换功能来完成工作的，因此这种方式不依赖web服务器，</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/11/web%E5%BC%80%E5%8F%91%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" data-id="cl6z7zhve000fbo7942xrhm80" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web%E4%B9%B1%E7%A0%81/" rel="tag">web乱码</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2022/08/18/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2020/02/06/navicat%E8%BF%9E%E6%8E%A5mysql%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">navicat连接mysql问题</div>
-    </a>
-  
-</nav>
-
-  
 </article>
+  
+  
+    </div></section>
+  
+
 
 </section>
         
