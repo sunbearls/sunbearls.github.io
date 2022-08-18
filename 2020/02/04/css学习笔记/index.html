@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>css学习笔记 | Sunbearls`s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="CSS基本语法格式:分为两个部分（选择器和样式规则）。选择器用来指定HTML元素，{}中的内容为样式规则，用于设置样式内容。其格式如下： 12345H3&amp;#123;    font-family:Arial,sans-serif;    text-align:center;    color:red    &amp;#125;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css学习笔记">
+<meta property="og:url" content="http://yoursite.com/2020/02/04/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Sunbearls&#96;s Blog">
+<meta property="og:description" content="CSS基本语法格式:分为两个部分（选择器和样式规则）。选择器用来指定HTML元素，{}中的内容为样式规则，用于设置样式内容。其格式如下： 12345H3&amp;#123;    font-family:Arial,sans-serif;    text-align:center;    color:red    &amp;#125;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-04T06:27:32.000Z">
+<meta property="article:modified_time" content="2020-02-06T07:49:06.716Z">
+<meta property="article:author" content="Mr.luo">
+<meta property="article:tag" content="CSS">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Sunbearls`s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Sunbearls`s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">about</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-css学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/04/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-02-04T06:27:32.000Z" itemprop="datePublished">2020-02-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      css学习笔记
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>CSS基本语法格式:分为两个部分（选择器和样式规则）。选择器用来指定HTML元素，{}中的内容为样式规则，用于设置样式内容。其格式如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">H3&#123;</span><br><span class="line">    font-family:Arial,sans-serif;</span><br><span class="line">    text-align:center;</span><br><span class="line">    color:red</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>在Style属性中定义样式：最简单的CSS使用方法就是直接设置HTML元素的style属性，如下面的代码所示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;<span class="built_in">head</span>&gt;</span><br><span class="line">        &lt;title&gt;cse&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body style=<span class="string">&quot;background-color: &#x27;#0000FF&#x27;&quot;</span>&gt;</span><br><span class="line">        &lt;a href = <span class="string">&quot;http://nokiagu.cnblogs.com&quot;</span> style = <span class="string">&quot;color: red; font-size:40px&quot;</span>&gt;</span><br><span class="line">        nokiaguy.cnblogs.com&lt;/a&gt;</span><br><span class="line">        &lt;h3 style=<span class="string">&quot;font-size:50px&quot;</span>&gt;1234&lt;/h3&gt;</span><br><span class="line">        &lt;/body&gt;</span><br><span class="line">        &lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>这样设置格式的弊端在于后期修改代码时不方便，会产生大量的重复代码。所以采用在html中定义样式</p>
+<p>在html中定义样式：在html中通过style标签可以将HTML元素中的样式提炼出来，并且可以通过3种方式指定哪些HTML元素可以使用这些样式<br>·指定HTML元素的id：此方法在选择器前加“#”号，表示这个选择器就是一个id属性值，如下所示</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#link&#123;color:red;font-size:40px&#125;   //定义link的样式</span></span><br><span class="line">&lt;a href=<span class="string">&quot;http://nokiaguy.cnblogs.com&quot;</span> <span class="built_in">id</span>=<span class="string">&quot;link&quot;</span>&gt;nokiaguy.cnblogs.com&lt;/a&gt;  //此标签应用<span class="built_in">link</span>的样式</span><br></pre></td></tr></table></figure>
+<p>·通过HTML元素的class属性：此方式在选择器前加“.”号，表示这个选择器的名可以放在HTML元素的class属性中。如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.<span class="built_in">bg</span>&#123;background-color:<span class="string">&#x27;#0000FF&#x27;</span>&#125;;</span><br><span class="line">&lt;body class=<span class="string">&quot;bg&quot;</span>&gt;...&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>·通过HTML元素的标签名:当选择器正好是一个html元素名时，所有相应的HTML元素都会应用这个样式，代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">h3&#123;font-size:50px&#125;</span><br></pre></td></tr></table></figure>
+<p>在外部文件中定义样式：CSS可以将样式单独写在一个.css文件中，然后通过link标签引用这个文件，从而达到多个HTML页面共享样式的目的。使用如下代码进行引用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="built_in">link</span> <span class="built_in">type</span>=<span class="string">&quot;text/css&quot;</span> rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;style.css&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
+<p>实现样式的继承：继承就是如果HTML元素未设置某些样式，但在其父元素中设置了，在子元素中的就会继承父元素中的样式，如下面的代码所示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;h3 href=<span class="string">&quot;font-size:50px&quot;</span>&gt;</span><br><span class="line">&lt;a href=<span class="string">&quot;http://xxxxxxxx.com &quot;</span> style = <span class="string">&quot;color:red&quot;</span>&gt;&lt;/a&gt;</span><br><span class="line">&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<p>在上面的代码中a标签未设置font-size 样式，而其父元素h3设置了font-size样式，因此a也会应用font-size样式。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/04/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="cl6z7zhv20001bo79a0qzbh9g" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/02/04/AJAX%E5%AD%A6%E4%B9%A0%E7%AC%94%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          AJAX学习笔笔记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/02/02/javascript%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">javascript学习笔记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/">工具使用</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">问题解决</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AJAX/" rel="tag">AJAX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E4%BD%BF%E7%94%A8/" rel="tag">hexo使用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/navicat/" rel="tag">navicat</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/servlet/" rel="tag">servlet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web%E4%B9%B1%E7%A0%81/" rel="tag">web乱码</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AJAX/" style="font-size: 10px;">AJAX</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/hexo%E4%BD%BF%E7%94%A8/" style="font-size: 20px;">hexo使用</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/navicat/" style="font-size: 10px;">navicat</a> <a href="/tags/servlet/" style="font-size: 10px;">servlet</a> <a href="/tags/web%E4%B9%B1%E7%A0%81/" style="font-size: 10px;">web乱码</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/08/18/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/11/web%E5%BC%80%E5%8F%91%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/">web开发乱码问题</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/06/navicat%E8%BF%9E%E6%8E%A5mysql%E9%97%AE%E9%A2%98/">navicat连接mysql问题</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/06/servlet%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">servlet学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/04/AJAX%E5%AD%A6%E4%B9%A0%E7%AC%94%E7%AC%94%E8%AE%B0/">AJAX学习笔笔记</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 Mr.luo<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">about</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
